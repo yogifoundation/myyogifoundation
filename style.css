@@ -1,99 +1,151 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* General reset for margin and padding */
+* {
     margin: 0;
     padding: 0;
-    color: #fff;
-    background-color: #111;
+    box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
 header {
     background-color: #333;
-    padding: 10px 20px;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    color: #fff;
-}
-
-nav a {
-    margin: 0 10px;
+header nav a {
     color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
 }
 
-/* Hero Section */
+/* Hero Section (Banner) */
 .hero {
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
     text-align: center;
-    background: url('images/banner.jpg') no-repeat center center/cover;
-    padding: 100px 20px;
+    color: #fff;
 }
 
 .hero h2 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.hero .join-btn {
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.join-btn {
     padding: 10px 20px;
-    background: #ff5722;
+    background-color: #ff6f61;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
-/* About Us Section */
+/* About Section */
 .about {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .about-content {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .about-content img {
-    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.1rem;
 }
 
 /* Initiatives Section */
 .initiatives {
-    background: #222;
-    padding: 40px 20px;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.initiatives h2 {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .initiatives-grid {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.initiative {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
 }
 
 .initiative img {
-    width: 200px;
+    max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.initiative img:hover {
+    transform: scale(1.05);
+}
+
+.initiative h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
 }
 
 /* Contact Section */
 .contact {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    background-color: #fff;
     text-align: center;
 }
 
-.contact .whatsapp-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #25d366;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+.contact img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
 /* Footer */
 footer {
-    background: #000;
-    text-align: center;
+    background-color: #333;
+    color: #fff;
     padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
 }
