@@ -52,8 +52,8 @@ img {
 }
 
 .about-us img {
-    max-width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -69,76 +69,58 @@ img {
 
 .initiatives .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    text-align: center;
 }
 
-.initiatives img {
-    max-width: 200px;
-    height: 200px;
+.initiatives .initiative img {
+    width: 100%;
+    height: 250px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 /* Contact Us Section */
 .contact-us {
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
     padding: 50px 20px;
 }
 
 .contact-us .contact-content {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact-us img {
-    max-width: 400px;
+    width: 300px;
     height: 300px;
     object-fit: cover;
 }
 
 .contact-us form {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    width: 50%;
 }
 
-.contact-us input, .contact-us textarea {
+.contact-us form input,
+.contact-us form textarea,
+.contact-us form button {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
-.contact-us button {
-    padding: 10px;
+.contact-us form button {
     background-color: #333;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 /* Footer */
 footer {
-    text-align: center;
     background-color: #333;
     color: white;
+    text-align: center;
     padding: 20px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-us .content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .contact-us .contact-content {
-        flex-direction: column;
-    }
 }
