@@ -3,74 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yogi Foundation: Promoting yoga, meditation, and community support through initiatives and blogs.">
     <title>Yogi Foundation</title>
+    <!-- Link to External CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Hero Section -->
     <header>
-        <div class="header-container">
-            <h1>YOGI FOUNDATION</h1>
-            <nav>
-                <a href="#about">About Us</a>
-                <a href="#initiatives">Initiatives</a>
-                <a href="#contact">Contact Us</a>
-            </nav>
+        <div class="hero">
+            <h1>Welcome to Yogi Foundation</h1>
         </div>
     </header>
 
-    <!-- Home Page Section (Hero Section with Banner Image) -->
-    <section class="hero" style="background-image: url('images/banner.jpg');">
-        <h2>Empowering Communities, Changing Lives</h2>
-        <p>We provide opportunities for people to come together and make a difference.</p>
-        <a href="#contact" class="join-btn">Join Us</a>
-    </section>
-
     <!-- About Us Section -->
-    <section id="about" class="about">
-        <h2>Who We Are</h2>
-        <div class="about-content">
-            <img src="images/yoga.png" alt="Yoga Image">
-            <div class="about-text">
-                <h3>Our History</h3>
-                <p>The Yogi Foundation was founded in 2024 to promote well-being and community support through initiatives like yoga camps and blood donation drives. Our mission is to honor tradition and provide a place for reflection and worship.</p>
-            </div>
+    <section class="about-us">
+        <img src="images/yoga.png" alt="About Us Image">
+        <div>
+            <h2>About Us</h2>
+            <p>Yogi Foundation is dedicated to promoting wellness and mindfulness through yoga and meditation practices. Join us in making a difference in our communities!</p>
         </div>
     </section>
 
     <!-- Initiatives Section -->
-    <section id="initiatives" class="initiatives">
+    <section class="initiatives">
         <h2>Our Initiatives</h2>
-        <div class="initiatives-grid">
-            <div class="initiative">
-                <img src="images/temple.png" alt="Guru Gorakhnath Temple">
-                <h3>Guru Gorakhnath Temple</h3>
-                <p>The Yogi Foundation is dedicated to building a space for spiritual growth, devotion, and community connection.</p>
-            </div>
-            <div class="initiative">
-                <img src="images/blood-donation.png" alt="Blood Donation Camp">
-                <h3>Blood Donation Camp</h3>
-                <p>Supporting the community by organizing blood donation drives and spreading awareness.</p>
-            </div>
-            <div class="initiative">
-                <img src="images/meditation.png" alt="Yoga & Meditation Center">
-                <h3>Yoga & Meditation Center</h3>
-                <p>Providing a sanctuary for mindfulness and inner peace through yoga and meditation practices.</p>
-            </div>
+        <div>
+            <img src="images/temple.png" alt="Temple Initiative">
+            <p>Temple restoration and maintenance.</p>
+        </div>
+        <div>
+            <img src="images/blood-donation.png" alt="Blood Donation Initiative">
+            <p>Blood donation drives to save lives.</p>
+        </div>
+        <div>
+            <img src="images/meditation.png" alt="Meditation Initiative">
+            <p>Mindfulness and meditation sessions.</p>
         </div>
     </section>
 
+    <!-- Blogs Section -->
+    <section class="blogs">
+        <h2>Our Blog</h2>
+        <div class="blog">
+            <img src="images/blog1.jpg" alt="Blog 1">
+            <p>How yoga can change your life: Daily practices for mindfulness.</p>
+        </div>
+        <div class="blog">
+            <img src="images/blog2.jpg" alt="Blog 2">
+            <p>The power of giving: Stories from our blood donation drives.</p>
+        </div>
+        <!-- Add more blogs as needed -->
+    </section>
+
     <!-- Contact Us Section -->
-    <section id="contact" class="contact">
+    <section class="contact-us">
         <h2>Contact Us</h2>
-        <p>Better yet, see us in person!</p>
-        <a href="https://wa.me/7820869705" class="whatsapp-btn">Message us on WhatsApp</a>
-        <img src="images/contact.png" alt="Contact Us Image">
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Yogi Foundation. All Rights Reserved.</p>
+        <p>© 2024 Yogi Foundation. All rights reserved.</p>
     </footer>
 </body>
 </html>
