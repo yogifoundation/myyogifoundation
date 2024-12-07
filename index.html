@@ -3,75 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yogi Foundation: Promoting yoga, meditation, and community support through initiatives and blogs.">
+    <meta name="description" content="Yogi Foundation: Promoting yoga, meditation, and community support.">
     <title>Yogi Foundation</title>
-    <!-- Link to External CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <header>
-        <div class="hero">
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="container">
             <h1>Welcome to Yogi Foundation</h1>
+            <p>Spreading wellness through yoga and meditation.</p>
         </div>
     </header>
 
     <!-- About Us Section -->
     <section class="about-us">
-        <img src="images/yoga.png" alt="About Us Image">
-        <div>
+        <div class="container">
             <h2>About Us</h2>
-            <p>Yogi Foundation is dedicated to promoting wellness and mindfulness through yoga and meditation practices. Join us in making a difference in our communities!</p>
+            <div class="content">
+                <img src="images/yoga.png" alt="About Us">
+                <p>At Yogi Foundation, we are committed to promoting mental and physical wellness through yoga, meditation, and community-driven initiatives. Join us in our journey to create a better world.</p>
+            </div>
         </div>
     </section>
 
     <!-- Initiatives Section -->
     <section class="initiatives">
-        <h2>Our Initiatives</h2>
-        <div>
-            <img src="images/temple.png" alt="Temple Initiative">
-            <p>Temple restoration and maintenance.</p>
-        </div>
-        <div>
-            <img src="images/blood-donation.png" alt="Blood Donation Initiative">
-            <p>Blood donation drives to save lives.</p>
-        </div>
-        <div>
-            <img src="images/meditation.png" alt="Meditation Initiative">
-            <p>Mindfulness and meditation sessions.</p>
+        <div class="container">
+            <h2>Our Initiatives</h2>
+            <div class="grid">
+                <div class="initiative">
+                    <img src="images/temple.png" alt="Temple Restoration">
+                    <h3>Temple Restoration</h3>
+                    <p>Preserving sacred spaces for future generations.</p>
+                </div>
+                <div class="initiative">
+                    <img src="images/blood-donation.png" alt="Blood Donation">
+                    <h3>Blood Donation Drives</h3>
+                    <p>Saving lives through regular blood donation events.</p>
+                </div>
+                <div class="initiative">
+                    <img src="images/meditation.png" alt="Meditation Camps">
+                    <h3>Meditation Camps</h3>
+                    <p>Guiding individuals to inner peace through mindfulness.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Blogs Section -->
-    <section class="blogs">
-        <h2>Our Blog</h2>
-        <div class="blog">
-            <img src="images/blog1.jpg" alt="Blog 1">
-            <p>How yoga can change your life: Daily practices for mindfulness.</p>
-        </div>
-        <div class="blog">
-            <img src="images/blog2.jpg" alt="Blog 2">
-            <p>The power of giving: Stories from our blood donation drives.</p>
-        </div>
-        <!-- Add more blogs as needed -->
-    </section>
-
-    <!-- Contact Us Section -->
+    <!-- Contact Section -->
     <section class="contact-us">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <img src="images/contact.png" alt="Contact Us">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>© 2024 Yogi Foundation. All rights reserved.</p>
+        <div class="container">
+            <p>© 2024 Yogi Foundation. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
