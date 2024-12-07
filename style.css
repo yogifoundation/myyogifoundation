@@ -20,6 +20,34 @@ img {
     margin: 0 auto;
 }
 
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f1f1f1;
+}
+
 /* Hero Section */
 .hero {
     background: url('images/banner.jpg') no-repeat center center/cover;
@@ -115,6 +143,25 @@ img {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+/* WhatsApp Section */
+.whatsapp {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.whatsapp-link {
+    background-color: #25d366;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.whatsapp-link:hover {
+    background-color: #128c7e;
 }
 
 /* Footer */
