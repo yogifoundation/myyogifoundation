@@ -1,45 +1,120 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
-    background-color: #111;
+    line-height: 1.6;
 }
 
 header {
+    text-align: center;
+    padding: 20px;
     background: #333;
     color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-nav a {
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    text-align: center;
-    background: url('../images/banner.jpg') no-repeat center center/cover;
-    padding: 100px 20px;
-}
-
-.hero h2 {
-    font-size: 2.5em;
 }
 
 section {
-    padding: 40px 20px;
-}
-
-footer {
-    background: #222;
-    text-align: center;
     padding: 20px;
 }
 
-form input, form button {
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/banner.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    margin: 10px;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-us img {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.about-us div {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Initiatives Section */
+.initiatives {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.initiatives img {
+    border-radius: 8px;
+}
+
+/* Blogs Section */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.blog img {
+    border-bottom: 1px solid #ddd;
+}
+
+.blog p {
+    padding: 10px;
+}
+
+/* Contact Section */
+.contact-us form input, .contact-us form textarea, .contact-us form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .initiatives {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
 }
