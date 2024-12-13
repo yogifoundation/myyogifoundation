@@ -151,4 +151,171 @@
         margin-bottom: 20px;
     }
 }
+/* Join Us Section */
+#join-us {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 50px;
+    text-align: center;
+}
+
+#join-us h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Container for all items */
+.join-us-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px;
+}
+
+/* Individual item styling */
+.join-item {
+    background-color: #222; /* Slightly lighter background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: left;
+}
+
+.join-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.join-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f1c40f; /* Gold heading */
+}
+
+.join-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .join-us-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .join-item {
+        width: 90%;
+    }
+}
+/* Contact Us Section */
+#contact-us {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    padding: 50px;
+    text-align: center;
+}
+
+#contact-us h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Left Column Styling */
+.contact-text {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-text h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-text p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    background-color: #25d366; /* WhatsApp green */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Right Column Styling */
+.contact-image {
+    flex: 1;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Subscribe Section */
+.subscribe {
+    margin-top: 30px;
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe input {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    background-color: #f1c40f; /* Gold button */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-text, .contact-image {
+        text-align: center;
+    }
+
+    .contact-image img {
+        width: 90%;
+    }
+}
+
+
 
