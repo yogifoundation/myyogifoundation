@@ -1,321 +1,147 @@
 /* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Navigation Bar */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-  color: white;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-}
-
-.navbar .logo a {
-  font-size: 1.5rem;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.navbar .nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-
-.navbar .nav-links li a:hover {
-  color: #f04e30; /* Highlight color */
-}
-
-/* Hero Section */
-.hero-section {
-  height: 100vh; /* Full viewport height */
-  background: url('images/banner.jpg') no-repeat center center/cover; /* Background image */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  color: white;
-  position: relative;
-  padding-top: 5rem; /* To avoid overlap with navbar */
-}
-
-.hero-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  padding: 0.8rem 2rem;
-  background-color: #f04e30;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background-color: #d13c25;
-  
-}
-/* General Styling for the Section */
-#about-us {
-    display: flex;
-    align-items: center;
-    padding: 50px;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-}
-
-/* Image Styling */
-#about-us img {
-    width: 80%; /* Adjust width of the image */
-    border-radius: 10px; /* Rounded corners */
-}
-
-/* Text Container Styling */
-#about-us div:nth-child(2) { /* The text container */
-    padding: 20px;
-}
-
-/* Heading Styling */
-#about-us h2 {
-    border-bottom: 2px solid #fff;
-    display: inline-block;
-    padding-bottom: 5px;
-    font-size: 24px; /* Heading font size */
-}
-
-/* Paragraph Styling */
-#about-us p {
-    margin-top: 20px;
-    line-height: 1.8;
-    font-size: 16px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #about-us {
-        flex-direction: column; /* Stack content vertically */
-        text-align: center; /* Center-align everything */
-    }
-
-    #about-us img {
-        width: 90%; /* Adjust image width on smaller screens */
-        margin-bottom: 20px;
-    }
-}
-/* Join Us Section */
-#join-us {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-    padding: 50px;
-    text-align: center;
-}
-
-#join-us h2 {
-    margin-bottom: 30px;
-    font-size: 24px;
-    border-bottom: 2px solid #fff;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-/* Container for all items */
-.join-us-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    gap: 20px;
-}
-
-/* Individual item styling */
-.join-item {
-    background-color: #222; /* Slightly lighter background */
-    padding: 20px;
-    border-radius: 10px;
-    width: 30%;
-    text-align: left;
-}
-
-.join-item img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.join-item h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #f1c40f; /* Gold heading */
-}
-
-.join-item p {
-    font-size: 14px;
+/* Body and Fonts */
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .join-us-container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align items */
-    }
-
-    .join-item {
-        width: 90%;
-    }
-}
-/* Contact Us Section */
-#contact-us {
-    background-color: #111; /* Dark background */
-    color: #fff; /* White text */
-    padding: 50px;
-    text-align: center;
-}
-
-#contact-us h2 {
-    margin-bottom: 30px;
-    font-size: 24px;
-    border-bottom: 2px solid #fff;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-/* Contact Container */
-.contact-container {
+/* Navigation */
+nav ul {
+    list-style: none;
+    background: #333;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    padding: 10px 0;
 }
 
-/* Left Column Styling */
-.contact-text {
-    flex: 1;
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: 400px; /* Adjusted height */
+    object-fit: cover;
+}
+
+#hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 5%; /* Text starts on the left */
+    transform: translateY(-50%);
+    color: white;
+    max-width: 500px;
     text-align: left;
 }
 
-.contact-text h3 {
-    font-size: 18px;
+#hero h1 {
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
-.contact-text p {
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.whatsapp-link {
-    display: inline-block;
-    background-color: #25d366; /* WhatsApp green */
-    color: #fff;
+#hero button {
+    background: #f1c40f;
+    border: none;
     padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* Section Headings */
+h2.section-heading {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2.section-heading::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #f1c40f;
+    margin-top: 5px;
+}
+
+/* Who We Are Section */
+#who-we-are .content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#who-we-are img {
+    width: 40%;
+    margin-right: 20px;
+}
+
+#who-we-are p {
+    width: 60%;
+}
+
+/* Join Us Section */
+#join-us .work-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+#join-us .work-items div {
+    text-align: center;
+    max-width: 300px;
+}
+
+#join-us .work-items img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
-/* Right Column Styling */
-.contact-image {
-    flex: 1;
+/* Contact Us Section */
+#contact-us .contact-content {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.contact-image img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Subscribe Section */
-.subscribe {
-    margin-top: 30px;
-}
-
-.subscribe form {
+#contact-us form {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
-.subscribe input {
+#contact-us input {
     padding: 10px;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    flex: 1;
+    width: 200px;
 }
 
-.subscribe button {
+#contact-us button {
+    background: #f1c40f;
+    border: none;
     padding: 10px 20px;
-    background-color: #f1c40f; /* Gold button */
-    color: #000;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-    }
-
-    .contact-text, .contact-image {
-        text-align: center;
-    }
-
-    .contact-image img {
-        width: 90%;
-    }
-}
-
-
-
