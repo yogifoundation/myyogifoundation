@@ -1,42 +1,156 @@
 /* General Reset */
-* {
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Body */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9; /* Light gray background */
+a {
+    text-decoration: none;
+    color: inherit;
 }
-/* Navigation Bar */
-nav {
+
+ul {
+    list-style: none;
+}
+
+/* Header (Navigation Bar) */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
+    padding: 10px 5%;
+    background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    position: sticky;
+    top: 0;
 }
 
-nav .logo {
-    font-size: 20px;
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
     font-weight: bold;
 }
-nav ul {
-    list-style: none;
-    display: flex;
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
+/* Hero Section */
+.hero {
+    background: url('images/banner.jpg') center/cover no-repeat;
+    height: 600px;
     color: white;
-    text-transform: uppercase;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f04e30;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Who We Are Section */
+.who-we-are {
+    padding: 40px 10%;
+    background-color: #f8f8f8;
+}
+
+.who-we-are h2 {
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.who-we-are .content {
+    display: flex;
+    gap: 20px;
+}
+
+.who-we-are .text, .who-we-are .image {
+    width: 50%;
+}
+
+.who-we-are img {
+    max-width: 100%;
+    height: 250px;
+}
+
+/* Join the Yogi Foundation Section */
+.join-us {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.join-us h2 {
+    margin-bottom: 30px;
+}
+
+.work-items {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.work-items img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 40px 10%;
+    background-color: #f8f8f8;
+}
+
+.contact-content {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-content .text {
+    width: 50%;
+}
+
+.contact-content .image img {
+    height: 200px;
+    max-width: 100%;
+}
+
+.subscribe {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.subscribe input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
 }
