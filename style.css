@@ -1,9 +1,17 @@
 /* General Reset */
-body, html {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light gray background */
+}
+
 
 a {
     text-decoration: none;
@@ -13,38 +21,42 @@ a {
 ul {
     list-style: none;
 }
-
-/* Header (Navigation Bar) */
-header {
+/* Navigation Bar */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
-    background-color: #333;
+    background: #333;
     color: #fff;
-    position: sticky;
+    padding: 10px 20px;
     top: 0;
+    position: sticky;
 }
 
-.nav-links {
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    gap: 20px;
 }
 
-.nav-links a {
-    color: #fff;
-    font-weight: bold;
+nav ul li {
+    margin-left: 20px;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
 }
-
 /* Hero Section */
 .hero {
     background: url('images/banner.jpg') center/cover no-repeat;
-    height: 600px;
+    height: 550px;
     color: white;
     display: flex;
     align-items: center;
@@ -68,7 +80,6 @@ header {
     padding: 10px 20px;
     border-radius: 5px;
 }
-
 /* Who We Are Section */
 .who-we-are {
     padding: 40px 10%;
@@ -94,15 +105,16 @@ header {
     max-width: 100%;
     height: 250px;
 }
-
 /* Join the Yogi Foundation Section */
 .join-us {
     padding: 40px 10%;
-    text-align: center;
+    text-align: left;
 }
 
 .join-us h2 {
-    margin-bottom: 30px;
+  border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .work-items {
@@ -116,13 +128,17 @@ header {
     width: 100%;
     object-fit: cover;
 }
-
 /* Contact Us Section */
 .contact-us {
     padding: 40px 10%;
     background-color: #f8f8f8;
 }
 
+.contact-us h2 {
+  border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
 .contact-content {
     display: flex;
     gap: 20px;
