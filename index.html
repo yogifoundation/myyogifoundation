@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yogi Foundation</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogi Foundation</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">Yogi Foundation</div>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#who-we-are">About Us</a></li>
-            <li><a href="#join-us">Our Work</a></li>
-            <li><a href="#contact-us">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="#">Yogi Foundation</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#initiatives">Our Initiatives</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <img src="images/banner.jpg" alt="Empowering Communities">
-        <div class="hero-content">
-            <h1>Empowering Communities, Changing Lives</h1>
-            <p>We provide opportunities for people to come together and make a difference.</p>
-            <button>Join Us</button>
-        </div>
-    </section>
-
-    <!-- Who We Are Section -->
-    <section id="who-we-are">
-        <h2 class="section-heading">Who We Are</h2>
-        <div class="content">
-            <img src="images/meditation.png" alt="Meditation">
-            <p>
-                <strong>Our History</strong><br>
-                The Yogi Foundation was founded in 2024 by a group of compassionate individuals who recognized the need for an organization dedicated to promoting well-being and community support. Since then, it has grown into a thriving nonprofit, organizing blood donation camps, promoting yoga and meditation, and supporting various initiatives to uplift society.
-            </p>
-        </div>
-    </section>
-
-    <!-- Join Us Section -->
-    <!-- Join Us Section -->
+  <!-- Hero Section -->
+  <header class="hero-section">
+  <div class="hero-content">
+    <h1>Empowering Communities,<br> Changing Lives</h1>
+    <p>We provide opportunities for people to come together and make a difference.</p>
+    <a href="#join">Join Us</a>
+  </div>
+  </header>
+</body>
+</html>
+<!-- Who We Are Section -->
+<section id="about-us" style="display: flex; align-items: center; padding: 50px; background-color: #000; color: #fff;">
+    <!-- Left: Image -->
+    <div style="flex: 1; text-align: center;">
+        <img src="path-to-your-image.jpg" alt="Yoga Image" style="width: 80%; border-radius: 10px;">
+    </div>
+    
+    <!-- Right: Text -->
+    <div style="flex: 1; padding: 20px;">
+        <h2 style="border-bottom: 2px solid #fff; display: inline-block; padding-bottom: 5px;">Who We Are</h2>
+        <p style="margin-top: 20px; line-height: 1.8; font-size: 16px;">
+            <strong>Our History</strong><br>
+            The Yogi Foundation was founded in 2024 by a group of compassionate individuals who recognized the need for an organization dedicated to promoting well-being and community support. Since then, it has grown into a thriving nonprofit, organizing blood donation camps, promoting yoga and meditation, and supporting various initiatives to uplift society.
+        </p>
+    </div>
+</section>
 <section id="join-us">
     <h2>Join the Yogi Foundation and Come Together for Change</h2>
     <div class="join-us-container">
@@ -74,22 +79,26 @@
         </div>
     </div>
 </section>
-    <!-- Contact Us Section -->
-    <section id="contact-us">
-        <h2 class="section-heading">Contact Us</h2>
-        <div class="contact-container">
-            <div class="contact-text">
-                <p><strong>Better yet, see us in person!</strong><br>
-                We love our volunteers, so feel free to reach us at any time.</p>
-            </div>
-            <img src="images/contact.png" alt="Contact Us">
+<section id="contact-us">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <!-- Left Column -->
+        <div class="contact-text">
+            <h3>Better yet, see us in person!</h3>
+            <p>We love our volunteers, so feel free to reach us at any time.</p>
+            <a href="https://wa.me/yourwhatsappnumber" class="whatsapp-link">Message us on WhatsApp</a>
+            <p>Yogi Foundation</p>
         </div>
+        <!-- Right Column -->
+        <div class="contact-image">
+            <img src="contact-us.jpg" alt="Contact Us">
+        </div>
+    </div>
+    <div class="subscribe">
+        <h3>Subscribe</h3>
         <form>
-            <label for="email">Subscribe</label>
-            <input type="email" id="email" placeholder="Enter your email">
+            <input type="email" placeholder="Email" required>
             <button type="submit">Sign up</button>
         </form>
-    </section>
-</body>
-</html>
-
+    </div>
+</section>
