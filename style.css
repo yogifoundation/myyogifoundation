@@ -105,15 +105,25 @@ h2.section-heading::after {
 }
 
 /* Join Us Section */
+/* Join Us Section */
 #join-us .work-items {
     display: flex;
-    margin-left: 30px;
+    justify-content: space-between;
+    margin: 0 30px;
 }
 
 #join-us .work-items div {
     text-align: center;
+    width: 30%; /* Ensures each box takes equal width */
     margin: 10px;
 }
+
+#join-us .work-items img {
+    width: 100%; /* Reverts to previous full width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Previous height adjustment */
+}
+
 
 /* Contact Us Section */
 .contact-container {
