@@ -1,1 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: 400px; /* Adjusted height */
+    object-fit: cover;
+}
+
+#hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 5%; /* Text starts on the left */
+    transform: translateY(-50%);
+    color: white;
+    max-width: 500px;
+    text-align: left;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#hero button {
+    background: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* Section Headings */
+h2.section-heading {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2.section-heading::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #f1c40f;
+    margin-top: 5px;
+}
+
+/* Who We Are Section */
+#who-we-are .content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#who-we-are img {
+    width: 40%;
+    margin-right: 20px;
+}
+
+#who-we-are p {
+    width: 60%;
+}
+
+/* Join Us Section */
+#join-us .work-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+#join-us .work-items div {
+    text-align: center;
+    max-width: 300px;
+}
+
+#join-us .work-items img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Contact Us Section */
+#contact-us .contact-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact-us form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#contact-us input {
+    padding: 10px;
+    width: 200px;
+}
+
+#contact-us button {
+    background: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
