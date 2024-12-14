@@ -1,104 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yogi Foundation</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogi Foundation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <a href="#">Yogi Foundation</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#initiatives">Our Initiatives</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#who-we-are">About Us</a></li>
+            <li><a href="#join-us">Our Work</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- Hero Section -->
-  <header class="hero-section">
-  <div class="hero-content">
-    <h1>Empowering Communities,<br> Changing Lives</h1>
-    <p>We provide opportunities for people to come together and make a difference.</p>
-    <a href="#join">Join Us</a>
-  </div>
-  </header>
-</body>
-</html>
-<!-- Who We Are Section -->
-<section id="about-us" style="display: flex; align-items: center; padding: 50px; background-color: #000; color: #fff;">
-    <!-- Left: Image -->
-    <div style="flex: 1; text-align: center;">
-        <img src="path-to-your-image.jpg" alt="Yoga Image" style="width: 80%; border-radius: 10px;">
-    </div>
-    
-    <!-- Right: Text -->
-    <div style="flex: 1; padding: 20px;">
-        <h2 style="border-bottom: 2px solid #fff; display: inline-block; padding-bottom: 5px;">Who We Are</h2>
-        <p style="margin-top: 20px; line-height: 1.8; font-size: 16px;">
-            <strong>Our History</strong><br>
-            The Yogi Foundation was founded in 2024 by a group of compassionate individuals who recognized the need for an organization dedicated to promoting well-being and community support. Since then, it has grown into a thriving nonprofit, organizing blood donation camps, promoting yoga and meditation, and supporting various initiatives to uplift society.
-        </p>
-    </div>
-</section>
-<section id="join-us">
-    <h2>Join the Yogi Foundation and Come Together for Change</h2>
-    <div class="join-us-container">
-        <!-- Guru Gorakhnath Temple -->
-        <div class="join-item">
-            <img src="guru-gorakhnath.jpg" alt="Guru Gorakhnath Temple">
-            <h3>Guru Gorakhnath Temple</h3>
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="images/banner.jpg" alt="Empowering Communities">
+        <div class="hero-content">
+            <h1>Empowering Communities, Changing Lives</h1>
+            <p>We provide opportunities for people to come together and make a difference.</p>
+            <button>Join Us</button>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section id="who-we-are">
+        <h2 class="section-heading">Who We Are</h2>
+        <div class="content">
+            <img src="images/meditation.png" alt="Meditation">
             <p>
-                The Yogi Foundation is dedicated to building Guru Gorakhnath temples, creating sacred spaces for spiritual growth, devotion, and community connection. 
-                Our mission is to honor tradition and provide a place for reflection and worship.
+                <strong>Our History</strong><br>
+                The Yogi Foundation was founded in 2024 by a group of compassionate individuals who recognized the need for an organization dedicated to promoting well-being and community support. Since then, it has grown into a thriving nonprofit, organizing blood donation camps, promoting yoga and meditation, and supporting various initiatives to uplift society.
             </p>
         </div>
-        <!-- Blood Donation Camp -->
-        <div class="join-item">
-            <img src="blood-donation.jpg" alt="Blood Donation Camp">
-            <h3>Blood Donation Camp</h3>
-            <p>
-                There are many ways to support the Yogi Foundation’s blood donation program. You can donate blood, volunteer at our camps, or help spread awareness. 
-                Every contribution saves lives and makes a meaningful impact!
-            </p>
+    </section>
+
+    <!-- Join Us Section -->
+    <section id="join-us">
+        <h2 class="section-heading">Join the Yogi Foundation and Come Together for Change</h2>
+        <div class="work-items">
+            <div>
+                <img src="images/temple.png" alt="Guru Gorakhnath Temple">
+                <h3>Guru Gorakhnath Temple</h3>
+                <p>The Yogi Foundation is dedicated to building Guru Gorakhnath temples, creating sacred spaces for spiritual growth, devotion, and community connection.</p>
+            </div>
+            <div>
+                <img src="images/blood-donation.png" alt="Blood Donation Camp">
+                <h3>Blood Donation Camp</h3>
+                <p>Support the blood donation program to save lives and make a meaningful impact.</p>
+            </div>
+            <div>
+                <img src="images/yoga.png" alt="Yoga and Meditation Center">
+                <h3>Yoga & Meditation Center</h3>
+                <p>We are building centers for individuals to practice mindfulness and achieve inner peace.</p>
+            </div>
         </div>
-        <!-- Yoga & Meditation Center -->
-        <div class="join-item">
-            <img src="yoga-meditation.jpg" alt="Yoga & Meditation Center">
-            <h3>Yoga & Meditation Center</h3>
-            <p>
-                The Yogi Foundation is building a dedicated yoga and meditation center to promote physical and mental well-being. 
-                This center will serve as a sanctuary for individuals to practice mindfulness and achieve inner peace.
-            </p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <h2 class="section-heading">Contact Us</h2>
+        <div class="contact-content">
+            <p><strong>Better yet, see us in person!</strong><br>
+            We love our volunteers, so feel free to reach us at any time.</p>
+            <button>Message us on WhatsApp</button>
         </div>
-    </div>
-</section>
-<section id="contact-us">
-    <h2>Contact Us</h2>
-    <div class="contact-container">
-        <!-- Left Column -->
-        <div class="contact-text">
-            <h3>Better yet, see us in person!</h3>
-            <p>We love our volunteers, so feel free to reach us at any time.</p>
-            <a href="https://wa.me/yourwhatsappnumber" class="whatsapp-link">Message us on WhatsApp</a>
-            <p>Yogi Foundation</p>
-        </div>
-        <!-- Right Column -->
-        <div class="contact-image">
-            <img src="contact-us.jpg" alt="Contact Us">
-        </div>
-    </div>
-    <div class="subscribe">
-        <h3>Subscribe</h3>
         <form>
-            <input type="email" placeholder="Email" required>
+            <label for="email">Subscribe</label>
+            <input type="email" id="email" placeholder="Email">
             <button type="submit">Sign up</button>
         </form>
-    </div>
-</section>
+    </section>
+</body>
+</html>
